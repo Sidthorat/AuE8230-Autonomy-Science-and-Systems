@@ -1,0 +1,36 @@
+AuE8930 Capstone project
+Group Members:
+1.	Siddharth Thorat
+2.	Priyanshu Rawat
+3.	Amogh Venkata Ramana
+4.	Ninad Tarare
+GitHub Repository - https://github.com/priyanshurawat1509/AuE8230_Group_6_Repository
+Environment Dependencies:
+	All packages were developed on Ubuntu 20.04 using ROS 1Noetic
+	The file structure of this repository is similar to a ROS -Noetic file system
+	Camera setup and calibration
+	AprilTag ROS
+	Darknet ROS 
+	TurtleBot3 packages
+	TurtleBot3 simulations
+
+-	Gazebo World:
+                               
+ 
+Project Descriptions:          
+    Task-1: Wall Following/Obstacle Avoidance-
+	The task of wall following was the first task to be accomplished in the project. The values of the linear and angular velocities were to be altered, mostly increased for linear and decreased for angular for optimal control in the real world. A P controller was implemented to perform wall following and obstacle avoidance. The minimum distances from the obstacles had to also be changed to be optimal for the real world.
+ 
+     Task-2: Line Following and Stop Sign Detection-
+	For the task of line following, we use blob tracking. The blob tracking method detects specific regions in the image that have similar properties such as brightness, color, etc. For line following, blob tracking can be used as the lane has the same color throughout. The color is specified using HSV values, which is a scale that provides a numerical range of a specific color. As the color of the lane was yellow, we specified a range for the color as lower yellow and upper yellow denoting the range of the colors. 
+	This method also used masking to detect the blob on the specified color range, increasing the volume of data transfer between the remote PC and the bot. Thus, using the compatible input image was an important condition. 
+ 
+
+	While navigating through yellow line the TurtleBot-3 Burger was been successfully made to stop near stop sign by Tiny Yolo for 3 seconds and then, again followed the yellow line. 
+
+Task-3: AprilTag Detection-
+	During the AprilTag detection task, we need to spawn the another TurtleBot 3 Burger with AprilTag in the gazebo environment which is teleoperated by the user where the other TurtleBot 3 burger should follow its path.
+ 
+
+Report:
+-	The final report has been attached in the aue_finals file. 
